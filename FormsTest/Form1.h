@@ -52,7 +52,6 @@ namespace CppCLR_WinformsProjekt {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(Form1::typeid));
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->label1 = (gcnew System::Windows::Forms::Label());
@@ -61,7 +60,7 @@ namespace CppCLR_WinformsProjekt {
 			// textBox1
 			// 
 			this->textBox1->Location = System::Drawing::Point(11, 48);
-			this->textBox1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->textBox1->Margin = System::Windows::Forms::Padding(2);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(68, 20);
 			this->textBox1->TabIndex = 0;
@@ -69,7 +68,7 @@ namespace CppCLR_WinformsProjekt {
 			// button1
 			// 
 			this->button1->Location = System::Drawing::Point(11, 84);
-			this->button1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->button1->Margin = System::Windows::Forms::Padding(2);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(67, 26);
 			this->button1->TabIndex = 1;
@@ -90,7 +89,7 @@ namespace CppCLR_WinformsProjekt {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
+			this->BackColor = System::Drawing::Color::Aqua;
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(360, 207);
 			this->Controls->Add(this->label1);
